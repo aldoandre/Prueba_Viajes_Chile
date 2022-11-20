@@ -5,111 +5,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--CDN Bootstrap CSS 5.2.2-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--Font Awesome -->
     <script src="https://kit.fontawesome.com/7f78455c44.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <!--Navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg bg-*">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand text-white ms-5" href="#">
                 <img src="/assets/img/viajes.svg" alt="Logo" width="30" height="24"
                     class="d-inline-block align-text-top">
-                VIAJES CHILE
+                Viajes Chile
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Quienes Somos</a>
-                    <a class="nav-link" href="#">Destacados</a>
-                    <a class="nav-link" href="#">Contacto</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active text-white" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link text-white" href="#quienessomos">¿Quienes Somos?</a>
+                    <a class="nav-link text-white" href="#destacados">Destacados</a>
+                    <a class="nav-link text-white" href="#contacto">Contacto</a>
                 </div>
             </div>
         </div>
     </nav>
+    <!--Carrousel-->
     <header>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="foto de llamas">
+        <div id="inicio">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="foto de llamas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/carousel2.jpg" class="d-block w-100" alt="foto de moai">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/carousel3.jpg" class="d-block w-100" alt="foto de pingüino">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/carousel2.jpg" class="d-block w-100" alt="foto de moai">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/carousel3.jpg" class="d-block w-100" alt="foto de pingüino">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </header>
-    <section>
-        <div>
+    <!--Sección Quienes Somos-->
+    <section id="quienessomos" class="d-none d-md-block p-4">
+        <div class="textquienessomos text-center py-2">
             <h2>¿Quienes Somos?</h2>
-
         </div>
-        <br>
+        <hr>
         <div class="row">
-            <div>
-                <i class="fa-solid fa-plane"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ab maxime mollitia magnam, quaerat
-                    saepe
-                    asperiores magni eaque aspernatur deleniti pariatur expedita quas hic enim debitis vero veritatis
-                    dolor
-                    minus.</p>
+            <div class="col-sm-6 col-md-4 pt-4">
+                <div class="bgfavicon text-center text-white py-2">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci atque hic rem tenetur
+                    impedit sequi officia praesentium optio! Maiores, odit blanditiis. Mollitia explicabo animi possimus
+                    perferendis nesciunt eos corporis laboriosam, aperiam, molestias quia eaque reiciendis labore, nam
+                    vitae maxime!</p>
             </div>
-            <div><i class="fa-solid fa-mountain"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iusto, eligendi aperiam accusantium
-                    non
-                    repellat sint delectus id reprehenderit, quos, culpa maxime officiis harum et odit assumenda autem
-                    repudiandae pariatur?
+            <div class="col-sm-6 col-md-4 pt-4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus esse quis nisi est voluptate
+                    excepturi odio quaerat corrupti maiores deleniti incidunt reprehenderit, tempora consectetur, cum,
+                    commodi dignissimos aperiam ad delectus iste ducimus eos saepe? Mollitia consectetur, assumenda
+                    voluptatibus odit natus cumque dolores. Perspiciatis, error magni.
                 </p>
+                <div class="bgfavicon text-center text-white py-2">
+                    <i class="fa-solid fa-mountain"></i>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-route"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta labore voluptatem voluptatibus
-                    vitae, quo explicabo praesentium temporibus officiis deleniti quam rem fuga excepturi quisquam hic
-                    porro
-                    ipsam iure nemo.</p>
+            <div class="col-sm-6 col-md-4 pt-4">
+                <div class="bgfavicon text-center text-white py-2">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae ut, odit sunt
+                    accusamus earum incidunt pariatur quis neque expedita sed autem praesentium blanditiis ad doloribus
+                    aut. Illo placeat asperiores sed maiores, voluptate provident numquam molestias natus, culpa,
+                    reiciendis error aspernatur! Officiis laborum aperiam facere.</p>
             </div>
         </div>
     </section>
+    <!--Sección Destacados-->
+    <section id="destacados" class="destacados p-4">
+        <div class="text-destacado text-center">
+            <h2>Destacados</h2>
+        </div>
+        <hr>
+        <div class="row card-deck">
+            <div class="col-sm-6 col-md-3 my-3">
+                <div class="card h-100 ">
+                    <img src="/assets/img/card1.jpg" class="card-img-top" alt="foto torres del paine">
+                    <div class="card-body">
+                        <h5 class="card-title">Torres del Paine increible</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis laborum
+                            porro debitis ex quos!.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 my-3">
+                <div class="card h-100">
+                    <img src="/assets/img/card2.jpg" class="card-img-top" alt="foto de lagunas">
+                    <div class="card-body">
+                        <h5 class="card-title">Lagunas del Desierto</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad esse
+                            consequatur nostrum exercitationem consectetur!.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 my-3">
+                <div class="card h-100">
+                    <img src="/assets/img/card3.jpg" class="card-img-top" alt="foto de salar">
+                    <div class="card-body">
+                        <h5 class="card-title">Salares del Desierto</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia
+                            tempora aspernatur. Eius, excepturi officiis?.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 my-3">
+                <div class="card h-100">
+                    <img src="/assets/img/card4.jpg" class="card-img-top" alt="foto de bosque">
+                    <div class="card-body">
+                        <h5 class="card-title">Selva lluviosa del Sur</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
+                            eligendi?.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sección Contacto -->
+    <section id="contacto" class="contacto text-center p-4">
+        <div class="text-contacto">
+            <h2>Contacto</h2>
+            <hr>
+            <p>¿Hablemos?, comparte tus ideas y sueños con nosotros, resuelve tus dudas y avanza un paso más hacia esa
+                experiencia inolvidable...</p>
+        </div>
 
+        <div class="formulario">
+            <button id="buttonform" data-tf-popup="klo4ZB" data-tf-iframe-props="title=talk typeform"
+                data-tf-medium="snippet">¡Escríbenos!
+            </button>
+        </div>
+    </section>
 
-
-
-    <footer>
-        <div>
+    <!--Sección Footer -->
+    <footer class="p-2">
+        <div class="text-footer text-white text-center">
             <h3>VIAJES CHILE</h3>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="favfooter text-center">
+            <a href="https://www.facebook.com" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="¡Siguenos!"><i class="text-white fa-brands fa-facebook mx-2 fa-3x"></i></a>
+            <a href="https://www.linkedin.com" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="¡Estemos en red!"><i class="text-white fa-brands fa-linkedin mx-2 fa-3x"></i></a>
+            <a href="https://www.github.com" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="¡Siguenos!"><i class="text-white fa-brands fa-github mx-2 fa-3x"></i></a>
+            <a href="https://www.twitter.com" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="¡Tuitiemos juntos!"><i class="text-white fa-brands fa-twitter mx-2 fa-3x"></i></a>
         </div>
     </footer>
+    <!--Script Typeform -->
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <!--CDN Bootstrap Bundle 5.2.2-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <!--CDN Jquery 3.6.1 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </body>
